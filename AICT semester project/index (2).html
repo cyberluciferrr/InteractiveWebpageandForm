@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ACP Applicaton Form</title>
+<style>
+
+body 
+{
+background-image: url('formbackground.jpg');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+font-family: Arial, sans-serif;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+img
+{
+display: block;
+margin: 20px auto;
+}
+
+h1,h2 
+{
+text-align: center;
+}
+
+h1 
+{
+margin-top: 0;
+}
+
+h2
+{
+color: #BD1411;   
+}
+
+form 
+{
+background: white;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0,0,0,0.1);
+width: 80%;
+max-width: 600px;
+}
+
+form div 
+{
+margin-bottom: 15px;
+}
+
+form label 
+{
+display: block;
+font-weight: bold;
+margin-bottom: 5px;
+}
+
+form input, form select 
+{
+width: calc(100% - 10px);
+padding: 5px;
+border-radius: 5px;
+border: 1px solid #ccc;
+}
+
+form input[type="checkbox"] 
+{
+width: auto;
+margin-right: 5px;
+}
+
+form p 
+{
+margin-bottom: 5px;
+font-weight: bold;
+}
+
+form div.checkbox-group 
+{
+display: flex;
+flex-wrap: wrap;
+gap: 5px;
+}
+
+form div.checkbox-group div
+{
+flex: 1 1 45%;
+padding: 5px 0;
+border-radius: 5px;
+background: #fff;
+}
+
+form div.checkbox-group label 
+{
+display: inline-block;
+font-weight: normal;
+}
+
+a 
+{
+display: block;
+text-align: center;
+margin-top: 20px;
+font-weight: bold;
+color: #BD1411;
+}
+
+button 
+{
+background-color: #BD1411;
+color: white;
+border: none;
+padding: 10px 20px;
+border-radius: 5px;
+cursor: pointer;
+font-size: 16px;
+margin: 5px;
+}
+
+button:hover 
+{
+background-color: #A10E0D;
+}
+
+</style>
+
+<script>
+function submitForm() 
+{
+alert("Thank you for your submission! Please wait for confirmation from us through call or email. Meanwhile, browse our website. Click on OK it will redirect you to our website.");
+window.open("https://www.acpkhi.com/");
+}
+</script>
+
+</head>
+<body>
+
+<div>
+<img src="logo.png" swidth="100px" height="100px">
+</div>
+<h1>ACP YOUTH AMBASSADOR PROGRAMME</h1>
+<h2>APPLICATION FORM</h2>
+
+<form id="applicationform">
+
+<div>  
+<label for="appdate">Application Date: </label>
+<input type="date" id="appdate" name="appdate" required>    
+</div>
+<br>
+
+<div>
+<label for="fname">Full Name: </label>
+<input type="text" id="fname" name="fname" placeholder="David Mc'Calum" required>    
+</div>
+<br>
+
+<div>
+<label for="pname">Parent/Guardian Name: </label>
+<input type="text" id="pname" name="pname" placeholder="Robert Sebastian" required>    
+</div>
+<br>
+ 
+<div>
+<label for="sex">Gender: </label>
+<select id="sex" name="sex">
+<option disabled>Choose from below</option>    
+<option>Male</option>
+<option>Female</option>
+</select>    
+</div>
+<br>
+
+<div>
+<label for="cnic">CNIC No: </label>
+<input type="tel" id="cnic" name="cnic" pattern="[0-9]{5}-[0-9]{7}-[0-9]{1}" placeholder="42401-3474746-5" required>    
+</div>
+<br>
+
+<div>
+<label for="iname">Institute Name: </label>
+<input type="text" id="iname" name="iname" placeholder="DHA Suffa University" required>    
+</div>
+<br>
+
+<div>
+<label for="sid">Student ID No: </label>
+<input type="text" id="sid" name="sid" placeholder="CYS232035" required>    
+</div>
+<br>
+
+<div>
+<label for="Subject">Subject Of Study: </label>
+<input type="text" id="subject" name="subject" placeholder="BS Cyber Security" required>    
+</div>
+<br>
+
+<div>
+<label for="year">Year Of Study: </label>
+<input type="number" id="year" name="year" placeholder="1" required>    
+</div>
+<br>
+
+<div>
+<label for="cell1">Cell No 1: </label>
+<input type="tel" id="cell1" name="cell1" placeholder="03323100094" required>    
+</div>
+<br>
+
+<div>
+<label for="cell2">Cell No 2: </label>
+<input type="tel" id="cell2" name="cell2" placeholder="03323100094" >    
+</div>
+<br>
+        
+<div>
+<label for="email">Email: </label>
+<input type="email" id="email" name="email" placeholder="cys232035@dsu.edu.pk" required>    
+</div>
+<br>
+            
+<div>
+<label for="add">Address: </label>
+<input type="text" id="add"  name="add" placeholder="HouseNum-Street-Area" required>    
+</div>
+<br>
+
+<div>
+<label for="city">City: </label>
+<input type="text" id="city" name="city" placeholder="Karachi" required>    
+</div>
+<br>
+
+<div>
+<label for="dis">District: </label>
+<input type="text" id="dis" name="dis" placeholder="Sindh" required>    
+</div>
+<br>
+
+<div>
+<p>Field(s) Of Interest: </p> 
+<div class="checkbox-group">
+<div><input type="checkbox" id="box1" name="box1" value="Theatre"><label for="box1">Theatre</label></div>
+<div><input type="checkbox" id="box2" name="box2" value="Fine Arts"><label for="box2">Fine Arts</label></div>
+<div><input type="checkbox" id="box3" name="box3" value="Photography"><label for="box3">Photography</label></div>
+<div><input type="checkbox" id="box4" name="box4" value="Writing"><label for="box4">Writing</label></div>
+<div><input type="checkbox" id="box5" name="box5" value="Music"><label for="box5">Music</label></div>
+<div><input type="checkbox" id="box6" name="box6" value="Textile Design"><label for="box6">Textile Design</label></div>
+<div><input type="checkbox" id="box7" name="box7" value="Videography"><label for="box7">Videography</label></div>
+<div><input type="checkbox" id="box8" name="box8" value="Event Management"><label for="box8">Event Management</label></div>
+<div><input type="checkbox" id="box9" name="box9" value="Dance"><label for="box9">Dance</label></div>
+<div><input type="checkbox" id="box10" name="box10" value="Graphic Design"><label for="box10">Graphic Design</label></div>
+<div><input type="checkbox" id="box11" name="box11" value="Declamation/Speech"><label for="box11">Declamation/Speech</label></div>
+</div>
+</div>
+<br>
+
+<div>
+<label for="cnicfile">Attach CNIC Picture(pdf): </label>
+<input type="file" id="cnicfile" name="cnicfile" required>    
+</div>
+<br>
+
+<div>
+<label for="idfile">Attach Student ID Picture(pdf): </label>
+<input type="file" id="idfile" name="idfile" required>    
+</div>
+<br>
+
+<div>
+<label for="pfile">Attach Passport Size Picture(pdf): </label>
+<input type="file" id="pfile" name="pfile" required>    
+</div>
+<br>
+
+<button type="reset">Reset</button>
+<button type="submit" onclick="submitForm()">Submit</button>
+</form>
+
+<p><a href="https://www.acpkhi.com/" target="_blank">www.acpkhi.com</a></p>
+
+</body>
+</html>
